@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1dEERz-U8SsSmiyMWOxVqXOTVcx-TYSGy
 """
 
-!pip install datasets torchmetrics wandb
 
 import torch
 from torch import einsum
@@ -20,7 +19,7 @@ from typing import List, Union
 from collections.abc import MutableMapping
 import torch.nn.functional as F
 
-768/2
+
 
 @dataclass
 class ModelConfig:
@@ -538,7 +537,7 @@ from pathlib import Path
 
 def get_config():
     return {
-        "batch_size": 24,
+        "batch_size": 120,
         "num_epochs": 3,
         "lr": 2e-4,
         "seq_len": 320,
